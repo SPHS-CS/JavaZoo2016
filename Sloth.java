@@ -1,53 +1,41 @@
-public class Sloth extends Animal implements Walking, Swimming, Flying
+public class Sloth extends Animal implements Swimming, Walking
 {
+    private String toy;
     public Sloth()
     {
-        super("Studentus commonus", "Accomplishes absolutely nothing, requires 10 food per hour.");
+        super("Sloth", "medium-sized mammals belonging to the families Megalonychidae (two-toed sloths) and Bradypodidae (three-toed sloths), classified into six species");
+        toy = "tree branch";
     }
-
-    public Sloth(String name, String desc)
+    
+    public Sloth(String name, String desc, String toy)
     {
         super(name, desc);
+        this.toy = toy;
     }
-
-    @Override
+    
     public String makeNoise()
     {
-        return "The sloth requests more food";
+        return "Sloth : ZzzzzZ...";
     }
-
-    @Override
+    
     public String play()
     {
-        return "Sloth does not play, sloth only eats.";
+        return "The " + super.getName() + " sleeps with its " + toy + ".";
     }
-
-    @Override
+    
     public String eat()
     {
-        return "The sloth eats. The sloth wants more food.";
+        return "It eats some Nap Nap fruit.";
     }
-
-    @Override
+    
     public String walk()
     {
-        return "hah";
+        return "The sloth crawls on trees.";
     }
-
-    @Override
+    
     public String swim()
     {
-        return "Good luck with that.";
+        return "Then the sloth dives into the Amazon River";
     }
-
-    @Override
-    public String fly()
-    {
-        return "The sloth falls to the ground. It requests more food.";
-    }
-
-    public String slap()
-    {
-        return "HOW CAN SHE SLAP";
-    }
+    
 }
