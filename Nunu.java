@@ -10,7 +10,7 @@ public class Nunu extends Animal implements Walking
         super(name, description);
     }
     
-    public String makenoise()
+    public String makeNoise()
     {
         return "h4h4h4h4h4h4h4h4h4";
     }
