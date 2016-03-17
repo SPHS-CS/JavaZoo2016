@@ -1,0 +1,5 @@
+interface Dance {
+	
+	void dance();
+	
+}
