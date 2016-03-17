@@ -1,6 +1,5 @@
 public interface Swimming
 {
-    //return type methodName(params)
-    //automagically public abstract
+    //all methods automagically public abstract
     String swim();
 }
