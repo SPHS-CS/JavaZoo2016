@@ -1,4 +1,4 @@
-public class Gnar extends Animal implements Walking, Rage
+public class Gnar extends Animal implements Walking
 {
     private String toy;
     
@@ -35,7 +35,6 @@ public class Gnar extends Animal implements Walking, Rage
         return "Gnar runs and hides in the bush.";
     }
     
-    @Override
     public String rageBar(int i)
     {
         if (i*2 > 100)
