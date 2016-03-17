@@ -2,7 +2,7 @@
 /**
  * Write a description of class Tiger here.
  * 
- * @author () 
+ * @author (Simon Stans) 
  * @version (a version number or a date)
  */
 public class Tiger extends Animal implements Walking
