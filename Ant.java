@@ -1,4 +1,4 @@
-public class Ant extends Animal implements Flying, walking, swimming
+public class Ant extends Animal implements Flying, Walking, Swimming
 {
     private int number;
     public Ant()
