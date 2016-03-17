@@ -11,7 +11,7 @@ public class Armchair extends Animal implements Flying {
         this.softness = softness;
     }
     
-    public String makeNoises() {
+    public String makeNoise() {
         return "Armchairs don't make noises.";
     }
     
