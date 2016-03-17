@@ -7,14 +7,12 @@ public class Gnu extends Animal implements Walking, Swimming
     {
         super("NewGnu", "Wildebeest");
         toy = "rope toy";
-        //tellJoke = "What's new? An animal at the zoo.";
     }
     
     public Gnu(String name, String description, String toy)
     {
         super(name, description);
         this.toy = toy;
-        //this.tellJoke = tellJoke;
     }
     
     @Override
