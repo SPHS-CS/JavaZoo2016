@@ -13,6 +13,12 @@ public class Robot extends Animal implements Walking, Swimming
     /**
      * Constructor for objects of class Robot
      */
+     public Robot()
+    {
+        super("Robby", "a nice robot and operating at 10 ghz");
+        ghz=10;
+        this.job="clean the zoo";
+    }
     public Robot(String name, String description, int speed, String job)
     {
         super(name, description+" and operating at "+speed+"ghz");
