@@ -46,15 +46,15 @@ public class Bugdroid extends Animal implements Dance{
 		
 		@Override
 		public void eat(){
-			System.out.println("The Enterprise digests some more enriched Uranium.");
+			System.err.println("The Enterprise digests some more enriched Uranium.");
 		}
 		@Override
 		public void play(){
-			System.out.println("The Enterprise drops out of warp above the Zoo.");
+			System.err.println("The Enterprise drops out of warp above the Zoo.");
 		}
 		@Override
 		public void makeNoise(){
-			System.out.println("The Android Outputs a high-pitched sceeching noise as it sees an iPhone on the horizon.");
+			System.err.println("The Android Outputs a high-pitched sceeching noise as it sees an iPhone on the horizon.");
 		}
 		
 	}
