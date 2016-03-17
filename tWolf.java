@@ -4,7 +4,7 @@ public class tWolf extends Animal implements Walking, Swimming
     
     public tWolf()
     {
-        super("Bear", "Just your average extinct marsupial.");
+        super("Tasmanian Wolf", "Just your average extinct marsupial.");
         toy = "stuffed kangaroo";
     }
     
