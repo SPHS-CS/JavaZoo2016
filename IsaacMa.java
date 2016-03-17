@@ -1,4 +1,4 @@
-public abstract class IsaacMa extends Animal implements Walking, Flying
+public class IsaacMa extends Animal implements Walking, Flying
 {
     private String toy;
     public IsaacMa()
