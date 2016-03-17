@@ -1,50 +1,39 @@
 public class Cat extends Animal implements Walking
 {
+    private String catfood;
+
     public Cat()
     {
-        super("Cat", "the only family member that you like");
+        super("Cat", "Cat eats catfood.");
     }
-    
-    public Cat(String name, String description)
+
+    public Cat(
+    String name, String desc, String catfood)
     {
-        super(name, description);
+        super(name, desc);
+        this.catfood = catfood;
     }
-    
-    @Override
-    public String eat()
-    {
-        return "Give me food! I want fish!";
-    }
-    
-    public String cute()
-    {
-        return "Whether I am fat or ugly, no matter what I do I'm cute. And you know that! :D";
-    }
-    
-    @Override
-    public String play()
-    {
-        return "Although many people have misconception that we like playing with the thread," + 
-                " what we really like is seeing humans being annoyed looking at the thread that" +
-                " they have to clean up. HEHEHEHEHEHEHEHEHEHE";
-    }
-    
-    @Override
+
     public String makeNoise()
     {
-        return "Don't expect me to say anything. Cuz I'm lazy.";
+        return "MiaoMiaoMiao";
     }
-    
+
+    public String play()
+    {
+        return "The " + super.getName() + " plays with its " + catfood + ".";
+    }
+
+    public String eat()
+    {
+        return "It eats too many food";
+
+    }
+
     @Override
     public String walk()
     {
-        return "You won't see me walking, because by that time you are sleeping.";
+        return "The cat walks in my house but my mom threatened it to go back to the zoo.";
     }
-    
-    public String lazy()
-    {
-        return "People say that we are lazy. No, we are not! We just don't feel the need to breath," +
-                "exercise, or do anything else.";
-    }
-    
+
 }
