@@ -1,4 +1,4 @@
-public class Chimera extends Animal implements walking, flying, fireBreathing, talking
+public class Chimera extends Animal implements Walking, Flying
 {
     private String toy;
     
@@ -44,13 +44,13 @@ public class Chimera extends Animal implements walking, flying, fireBreathing, t
         return "The Chimera flys like an eagle";
     }
     
-    @Override
+  
     public String fireBreath()
     {
         return "The Chimera makes a fire breathing effects like charman";
     }
     
-    @Override
+
     public String talk()
     {
         return "The Chimera talks but you cant hear it because 3 creature talks at the same time.";
