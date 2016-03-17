@@ -1,55 +1,56 @@
-public class Panda extends Animal implements Flying, Walking
+public class Panda extends Animal implements Walking, Swimming, MartialArts
 {
-
+    private String weapon;
+    
     public Panda()
     {
-        super ("Panda", "A friendly bear that likes to hug");
+        super("Po", "KungfuMaster");
+        weapon = "Sword of Heroes";
     }
-
-    public Panda (String name, String description)
+    
+    public Panda(String name, String description, String weapon)
     {
-        super (name, description);
+        super(name,description);
+        this.weapon = weapon;
     }
-
-    public String hug()
-    {
-        return "I like to give hugs but if you hug me when I'm grumpy, I'll throw bamboo at you";
-    }
-
-    @Override 
-    public String walk()
-    {
-        return "The baby panda ambles away";
-    }
-
-    @Override 
+    
+    @Override
     public String makeNoise()
     {
-        return "GRRRR";
+        return "HayYAAA!";
     }
-
+    
+    @Override
+    public String eat()
+    {
+        return "A bowl of noodle.";
+    }
+    
     @Override 
     public String play()
     {
-        return "The baby panda plays with his siblings";
+        return "The panda uses the " + weapon +".";
     }
-
-    @Override 
-    public String eat()
-    {
-        return "The bear chews on a shoot of bamboo";
-    }
-
-    @Override
+    
     public String fly()
     {
-        return "The panda jumps off the tree branch and flies for about a hundredth of a second before falling flat on his face";
+        return "The KungFu master flies wearing Master Flying Rhino's armor.";
     }
-
-    @Override
+    
+    public String walk()
+    {
+        return "Sometimes Po is too lazy to walk.";
+    }
+    
     public String swim()
     {
-        return "Sadly, the panda will start to sink if thrown into water";
+        return "Swim to relax.";
     }
-
+    
+    public String martialarts()
+    {
+        return "The KungFu master practices martial art to protect his village.";
+    }
+    
+    
 }
