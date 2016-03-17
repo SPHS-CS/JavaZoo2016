@@ -13,7 +13,7 @@ public abstract class Animal
     {
         return name;
     }
-   
+    
     public String getDescription()
     {
         return description;
@@ -23,8 +23,3 @@ public abstract class Animal
     public abstract String play();
     public abstract String makeNoise();
 }
-
-
-
-
-
