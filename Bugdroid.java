@@ -1,7 +1,7 @@
 public class Bugdroid extends Animal implements Dance{
     
     public Bugdroid(String name, String description, double version){
-		super(name, description);
+		super("Bugdroid", "The Android Mascot");
 		USSEnterprise enterprise = new USSEnterprise("USS Enterprise", "Constitution-Class Starship");
     }
     
